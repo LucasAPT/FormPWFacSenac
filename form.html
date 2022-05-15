@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--COMANDO QUE CHAMA O CSS EXTERNO PARA ESTE HTML-->
+   <link rel="stylesheet" href="style.css" />
+   
+    <title>Form</title>
+    <fieldset>
+    <legend>DADOS PESSOAIS</legend>
+
+    <label>Nome Completo: <br />
+        <input type="text" name="nome" required minlength="3" maxlength="100" />
+    </label>
+
+    <label>Data de Nascimento: <br />
+        <input type="date" name="date" required max="1900-02-01" />
+    </label>
+
+    <label>Sexo:            
+
+            <input type="radio" name = "M" /> Masc <input type="radio" name="F" /> Fem <input type="radio" name ="N/A"/> Prefiro não informar
+        
+    </label>
+  
+    <label>Endereço: <br />
+        
+    </label>
+
+    <label>Logradouro:
+        <input type="text" name="logradouro" />
+    </label>
+
+    <label>Bairro:
+        <input type="text" name="bairro" />
+    </label>
+
+    <label>Cidade:
+        <input type="text" name="cidade" />
+    </label>
+
+    <label>UF:
+        <select name ="UF"> 
+            <option value = "RJ">RJ</option>
+            <option value = "RS">RS</option>
+            <option value = "SC">SC</option>
+            <option value = "SP">SP</option>
+        </select>
+        
+    </label>
+
+    <label>E-mail:
+        <input type="email" name="email" />
+    </label>
+
+    <label>
+        <input type="submit" value="Limpar"/>
+        <input type="submit" value="Enviar"/>
+    </label>
+
+</fieldset>
+
+
+</head>
+<body>
+    
+</body>
+</html>
